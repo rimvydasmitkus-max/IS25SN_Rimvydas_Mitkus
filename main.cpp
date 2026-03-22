@@ -1,4 +1,6 @@
 #include <iostream>
+#include <iomanip>
+#include <cmath>
 #include <string>
 using namespace std;
 
@@ -50,6 +52,8 @@ int main() {
                 return 0;
             }
 
+            kursas = round(kursas * 100) / 100;
+            cout << fixed << setprecision(2);
             cout << "1 EUR = " << kursas << " " << valiuta << endl;
             break;
 
@@ -74,6 +78,8 @@ int main() {
                 return 0;
             }
 
+            rezultatas = round(rezultatas * 100) / 100;
+            cout << fixed << setprecision(2);
             cout << "Jus gausite: " << rezultatas << " " << valiuta << endl;
             break;
 
@@ -98,6 +104,8 @@ int main() {
                 return 0;
             }
 
+            rezultatas = round(rezultatas * 100) / 100;
+            cout << fixed << setprecision(2);
             cout << "Jus gausite: " << rezultatas << " EUR" << endl;
             break;
 
